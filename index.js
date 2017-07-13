@@ -15,4 +15,4 @@ app.listen(8080); // Llama al servidor y va a estar en este puerto.
 
 //para hacer una carpeta nueva usamos app.use("/rutaconcualquiernombre",express.static(__dirname + "/assets")) si solo hacemos assets dejamos acceder a todos los archivos que están contenidos dentro de esta. Los archivos aparte de hacer esto, debemos de linkearlos normalmente en el html. El nombre que tenga "rutaconcualquiernombre" debe de ponerse igual que el momento que linkeamos en el html. ej: <link rel="stylesheet" href="rutaconcualquiernombre/css/main.css">. 
        
-       
+//para hacer archivos en particular es la misma sustitucion que con las carpetas solo agregando el .js, .css, etc. y en el html se sustituye el nombre real del archivo por el que acabamos de usar como ruta virtual. 
