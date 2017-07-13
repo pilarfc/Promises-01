@@ -11,6 +11,8 @@ app.get('/', function(req,res) { //la diagonal significa raiz
 }); //app.get son metodos http, el navegador hace un get al local host, a ese servidor hazle una accion, en esta accion lo que queremos es que mande un archivo, este se encuentra en un directorio base junto con nuestro index.html.
 
 app.listen(8080); // Llama al servidor y va a estar en este puerto. 
-       
+
+
+//para hacer una carpeta nueva usamos app.use("/rutaconcualquiernombre",express.static(__dirname + "/assets")) si solo hacemos assets dejamos acceder a todos los archivos que están contenidos dentro de esta. Los archivos aparte de hacer esto, debemos de linkearlos normalmente en el html. El nombre que tenga "rutaconcualquiernombre" debe de ponerse igual que el momento que linkeamos en el html. ej: <link rel="stylesheet" href="rutaconcualquiernombre/css/main.css">. 
        
        
