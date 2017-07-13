@@ -23,8 +23,8 @@
         })
 };
         
-        getJSON("data/earth-like-results.json") // Este "data..." es el parametro url de nuestra función anterior. 
-        .then(function(mensaje){return(getJSON(mensaje.results[0]))}) // el return nos permite acceder a una nueva promesa ya que solo es un then por promise. 
+        getJSON("data/earth-like-results.json") // Este "data..." es el parametro url de nuestra función anterior. Debe de definirse en express, si no no va a funcionar. Cuando se cumpla el json, has lo de la linea de abajo. 
+        .then(function(mensaje){return(getJSON(mensaje.results[0]))}) // el return nos permite acceder a una nueva promesa ya que solo es un then por promise. Cuando se cumpla el resultado de cada planeta, haz lo de la linea de abajo. El return sirve para poder utilizarlo en la siguiente promesa.  
         .then(function(resultado){console.log(resultado)}); // este then funciona para que el promise anterior sea mostrado en consola. 
     
     </script>
